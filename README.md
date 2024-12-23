@@ -52,9 +52,9 @@ module d_ff_neg_edge (d, clk, rst, q);
 
   always @(negedge clk or posedge rst) begin
     if (rst)
-      q <= 0; // Reset the flip-flop
+      q <= 0; 
     else
-      q <= d; // D input is passed to Q on the negative clock edge
+      q <= d; 
   end
 endmodule
 ```
